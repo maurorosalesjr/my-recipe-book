@@ -16,3 +16,5 @@ Recipe.propTypes = {
   photo: PropTypes.string,
   id: PropTypes.string,
 }
+
+export default Recipe;
