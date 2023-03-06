@@ -1,14 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+const previewStyle = {
+  maxWidth: "25%",
+  border: "5px",
+  borderStyle: "solid",
+  textAlign: "center",
+}
+
 function Recipe(props){
   return (
     <React.Fragment>
-      <div onClick={() => props.whenRecipeClicked(props.id)}>
+      <div style={previewStyle} onClick={() => props.whenRecipeClicked(props.id)}>
         <img src={props.photo} alt="imgage of food" />
         <p><em>{props.name}</em></p>
-        <p>{props.ingredients}</p>
-        <p>{props.instructions}</p>
+        {/* <p>{props.ingredients}</p>
+        <p>{props.instructions}</p> */}
       </div>
       <hr />
     </React.Fragment>

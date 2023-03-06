@@ -2,6 +2,8 @@ import React from 'react';
 import RecipeList from './RecipeList';
 import RecipeDetail from './RecipeDetail';
 import mainRecipeList from "./MainRecipeList";
+import NewRecipeForm from "./NewRecipeForm";
+import EditRecipeForm from "./EditRecipeForm"
 
 class RecipeControl extends React.Component {
 
@@ -45,29 +47,29 @@ class RecipeControl extends React.Component {
   
     // EDIT AND DELETE RECIPE ARE REMOVED FROM THIS VERSION OF APP
       
-  // handleDeletingRecipe = (id) => {
-  //   const newMainRecipeList = this.state.mainRecipeList.filter(recipe => recipe.id !== id);
-  //   this.setState({
-  //     mainRecipeList: newMainRecipeList,
-  //     selectedRecipe: null
-  //   });
-  // }
+  handleDeletingRecipe = (id) => {
+    const newMainRecipeList = this.state.mainRecipeList.filter(recipe => recipe.id !== id);
+    this.setState({
+      mainRecipeList: newMainRecipeList,
+      selectedRecipe: null
+    });
+  }
 
-  // handleEditClick = () => {
-  //   console.log("handleEditClick reached!");
-  //   this.setState({editing: true});
-  // }
+  handleEditClick = () => {
+    console.log("handleEditClick reached!");
+    this.setState({editing: true});
+  }
 
-  // handleEditingRecipeInList = (recipeToEdit) => {
-  //   const editedMainRecipeList = this.state.mainRecipeList
-  //     .filter(recipe => recipe.id !== this.state.selectedRecipe.id)
-  //     .concat(recipeToEdit);
-  //   this.setState({
-  //       mainRecipeList: editedMainRecipeList,
-  //       editing: false,
-  //       selectedRecipe: null
-  //     });
-  // }
+  handleEditingRecipeInList = (recipeToEdit) => {
+    const editedMainRecipeList = this.state.mainRecipeList
+      .filter(recipe => recipe.id !== this.state.selectedRecipe.id)
+      .concat(recipeToEdit);
+    this.setState({
+        mainRecipeList: editedMainRecipeList,
+        editing: false,
+        selectedRecipe: null
+      });
+  }
 
 
 
