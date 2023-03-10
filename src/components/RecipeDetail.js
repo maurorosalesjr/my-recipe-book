@@ -8,6 +8,11 @@ function RecipeDetail(props){
     <React.Fragment>
       <h1>{recipe.name}</h1>
       <img src={recipe.photo} alt="image of dish" />
+      <ul>
+        {recipe.ingredients.split(',').map((ingredients) => (
+          <li key={ingredients}>{ingredients.trim()}</li>
+        ))}
+      </ul>
       <p>{recipe.ingredients}</p>
       <p>{recipe.instructions}</p>
       <hr />
