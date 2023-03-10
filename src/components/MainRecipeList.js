@@ -16,5 +16,5 @@ let mainRecipeList = [
     id: v4()
   },
 ]
-ljblj 
+
 export default mainRecipeList;
