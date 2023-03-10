@@ -24,4 +24,4 @@ yarn-error.log*
 
 
 
-/src/components/MainRecipeList.js
+./src/components/MainRecipeList.js
