@@ -6,7 +6,6 @@ import Recipe from "./Recipe";
 function RecipeList(props){
   return (
     <React.Fragment>
-      <hr/>
         {
           props.recipeList.map((recipe) =>
           <Recipe 
@@ -16,7 +15,7 @@ function RecipeList(props){
             instructions={recipe.instructions}
             photo={recipe.photo}
             id={recipe.id}
-            key={recipe.key}/>
+            key={recipe.id}/>
           )}
     </React.Fragment>
   );

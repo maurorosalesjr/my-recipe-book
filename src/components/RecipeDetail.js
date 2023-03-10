@@ -1,20 +1,29 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+const recipeName = {
+  textAlign: "center",
+}
+
 function RecipeDetail(props){
   const { recipe, onClickingDelete } = props;
 
   return (
     <React.Fragment>
-      <h1>{recipe.name}</h1>
+      <h1 style={recipeName}>{recipe.name}</h1>
       <img src={recipe.photo} alt="image of dish" />
+      <h5>Ingredients</h5>
       <ul>
         {recipe.ingredients.split(',').map((ingredients) => (
           <li key={ingredients}>{ingredients.trim()}</li>
         ))}
       </ul>
-      <p>{recipe.ingredients}</p>
-      <p>{recipe.instructions}</p>
+      <h5>Instructions</h5>
+      <ul>
+        {recipe.instructions.split(',').map((instructions) => (
+          <li key={instructions}>{instructions.trim()}</li>
+        ))}
+      </ul>
       <hr />
     </React.Fragment>
   );

@@ -1,23 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
+import './styles.css'
 
 const previewStyle = {
-  maxWidth: "25%",
-  border: "5px",
+  border: "2px",
   borderStyle: "solid",
   textAlign: "center",
+  padding: "10px",
 }
+
 
 function Recipe(props){
   return (
     <React.Fragment>
-      <div style={previewStyle} onClick={() => props.whenRecipeClicked(props.id)}>
-        <img src={props.photo} alt="imgage of food" />
-        <p><em>{props.name}</em></p>
-        {/* <p>{props.ingredients}</p>
-        <p>{props.instructions}</p> */}
+      <div className="flex-container">
+        <div className="flex-item" style={previewStyle} onClick={() => props.whenRecipeClicked(props.id)}>
+          <img src={props.photo} alt="imgage of food" />
+          <p><em>{props.name}</em></p>
+        </div>
       </div>
-      <hr />
     </React.Fragment>
   );
 }
