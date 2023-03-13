@@ -7,6 +7,7 @@ const previewStyle = {
   textAlign: "right",
   padding: "10px",
   align: "center",
+  zIndex: "2"
 }
 
 const imgStyle = {
@@ -14,6 +15,7 @@ const imgStyle = {
   backgroundColor: "lightgrey",
   display: "block",
   align: "left",
+  zIndex: "3",
 }
 
 

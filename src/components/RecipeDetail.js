@@ -10,14 +10,19 @@ const imgStyleR = {
   backgroundColor: "lightgrey",
   display: "block",
   textAlign: "right",
-  imageAlign: "right",
-  marginLeft: "70%",
-  marginRight: "5%",
+  marginLeft: "65%",
+  marginRight: "15%",
+  zIndex: "2",
+  position: "absolute",
+  marginTop: "1%",
+  width: "100%"
 }
 
 const recipeInfo = {
   textAlign: "left",
   display: "block",
+  zIndex: "3",
+  marginRight: "50%",
 }
 
 const recipeDeets = {
