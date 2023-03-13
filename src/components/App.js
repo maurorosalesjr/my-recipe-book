@@ -3,9 +3,11 @@ import Header from "./Header";
 import RecipeControl from "./RecipeControl";
 
 const basicStyle = {
-  marginLeft: "5%",
-  marginRight: "5%",
+  marginLeft: "1%",
+  marginRight: "1%",
   backgroundColor: "grey",
+  border: "3px",
+  borderColor: "black",
   
 }
 

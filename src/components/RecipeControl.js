@@ -4,6 +4,7 @@ import RecipeDetail from './RecipeDetail';
 import mainRecipeList from "./MainRecipeList";
 import NewRecipeForm from "./NewRecipeForm";
 import EditRecipeForm from "./EditRecipeForm"
+import './styles.css'
 
 class RecipeControl extends React.Component {
 
@@ -71,6 +72,7 @@ class RecipeControl extends React.Component {
       });
   }
 
+  
 
 
   render(){
@@ -100,7 +102,7 @@ class RecipeControl extends React.Component {
     return (
       <React.Fragment>
         {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button> 
+        <button onClick={this.handleClick} class="button-89">{buttonText}</button> 
       </React.Fragment>
     );
   }

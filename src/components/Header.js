@@ -3,12 +3,11 @@ import React from "react";
 const headerStyle = {
   textAlign: "center",
   textDecoration: "underline",
-  textDecorationStyle: "double",
-  textShadow: "-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black",
   fontFamily: "Cursive",
   border: "5px",
   borderStyle: "solid",
-  borderColor: "Burlywood",
+  borderColor: "blue",
+  backgroundColor: "cornflowerblue",
 }
 
 function Header(){
